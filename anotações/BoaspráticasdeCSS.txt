@@ -1,0 +1,34 @@
+#Boas práticas de CSS na nomeação de classes:
+
+##Má definição de classes CSS, exemplo:
+.navbar .active {}
+
+##Boa definição de classes CSS, exemplo: .navbar {}
+.navbar-title {}
+.navbar-active {}
+
+Existe um padrão para as boas práticas em CSS, chamado de Block Element Modifier (ou simplesmente de BEM).
+Vamos entender cada letra da sigla:
+- Block - componente que criamos e será utilizado em várias outras telas do projeto.
+- Element - elemento que está contido no bloco ('block').
+- Modifier - modificador.
+
+Padrão do BEM:
+[block__element--modifier]
+
+EXEMPLO:
+- HTML:
+-- navbar block
+<navbar class="navbar">
+    <a href="#" class="navbar-item">Home</a>
+    <a href="#" class="navbar-item">Courses</a>
+    <a href="#" class="navbar-item">Carreiras</a>
+</navbar>
+- CSS:
+.navbar {}
+.navbar-item {}
+
+- CSS com o BEM:
+.navbar {}
+.navbar__item {}
+.navbar__item--active {}

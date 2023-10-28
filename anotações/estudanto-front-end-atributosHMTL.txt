@@ -1,0 +1,32 @@
+#O que são atributos HTML?
+São palavras especiais usadas internamente na tag de abertura que permitem um controle maior do comportamento delas.
+
+- Existem dois tipos de atributos:
+-- Os aceitos por todas as tags: class, id, lang, style, dir, accesskey, contenteditable, data-*, draggable, dropzone, taindex, title, translate,
+
+Alguns desses atributos são importantes para todo o tipo de aplicação Web, principalmente para a interabilidade e facilidade de navegação dentro do site pelo usuário. Por exemplo o 'tabindex=0', permite que o usuário selecione um determinado elemento da página apenas com a tecla tab do teclado. 'contenteditable' permite que o usuário edite determinado conteúdo da plataforma.
+
+
+## Alguns atributos importantes e não necessariamente globais:
+
+src="caminho_de_arquivo"
+alt="texto_acessivel"
+href="link_redirecionavel"
+lang="idioma"
+target="blank" -> abre o link em outra aba do navegador, usado em conjunto com o `href`.
+
+## No CSS podemos utilizar as classes para especificar que queremos estilizar determinado atributo. Por exemplo:
+	HTML:
+<h1 class="titulo"> TITULO! </h1>
+	CSS:
+.titulo {
+	font-size: 21px;
+	color: #fff;
+	background: blue;
+}
+
+##Recursos para demarcação de texto de maneira semântica pouco conhecidos:
+- Lista de termos e definições:
+<dl> -> marca o inicio da lista de termos e definições
+<dt> -> termo
+<dd> -> descrição

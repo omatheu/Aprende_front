@@ -1,0 +1,27 @@
+#Seletores em CSS
+- tag
+Simplesmente se usa o nome da tag HTML que se deseja estilizar. 
+- classe
+.nome-da-classe
+- id
+Corresponde ao valor do atributo id do componente HTML que se deseja estilizar. Um id deve corresponder a apenas um elemento HTMl, id é um valor único.
+- Seletores universais
+Seleciona todos os nós. Também funciona dentro de um namespace. Exemplo: *ns | ** | * .
+- Seletores por atributo
+Esse seletor funciona para atributos com condições especificas dentro do HTML.
+Sintaxe: [atrib] [atrib=valor] [atrib~=valor] [atrib|=valor] [atrib^=valor] [atrib$=valor] [atrib*=valor]
+
+##Seleção por combinação
+- Seletores de irmãos adjacentes:
+Seleciona todos os elementos que estão dentro de um outro elemento 'superior' ou anteriormente selecionado. Sintaxe: A + B. Exemplo: ul + li irá corresponder a todos os elementos 'li' que estão dentro de 'ul'.
+
+- Seletores gerais de irmãos:
+O combinador ~ seleciona os nós que seguem (não necessariamente imeditamente) o elemento especificado anteriormente, se ambos compartilham o mesmo pai. Sintaxe: A ~ B. Exemplo: p~span, irá corresponder a todo elemento <span> que seguir um elemento <p> dentro de um mesmo elemento pai.
+
+- Seletor de filhos;
+O combinador > seleciona nós que são filhos diretos do elemento especificado anteriormente. Sintaxe: A > B. Exemplo: ul>li
+
+- Seletor de descendentes
+O combinador " " seleciona os nós que são filhos do elemento especificado anteriormente (não é necessário que seja um filho direto). Sintaxe: A B. Exemplo: div span, irá corresponder a todo e qualquer elemento <span> que estiver dentor do elemento <div>.
+
+Existem outros tipos de seletores mais dinâmicos: pseudo-classes (exemplo: permite a estilização de acordo se um link foi visitado ou não), pseudo-elementos (primeira letra de um parágrafo, marcador de uma lista)

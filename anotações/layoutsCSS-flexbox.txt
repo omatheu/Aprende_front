@@ -1,0 +1,36 @@
+#Entendo e ajustando layouts no CSS
+
+##Usando o flex-box
+O flex-box se propõe a ser uma maneira mais simples de alinhar componentes na tela, mantendo a qualidade em telas de diferentes tamanhos (layout responsivo).
+
+- O layout padrão é baseado em 'block' e 'inline'. O flex-box se basea em 'flex flow'.
+
+<img src="https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminology.svg" alt="imagem explicativa sobre o layout do flexbox">
+
+- Eixo principal: é o eixo primário em que os flex-items serão inseridos, não necessária horizontal, vai depender do valor atribuido para o flex-direction.
+- Main start | main end: da esquerda pra direita ou de cima para baixo. Se refere a ordem em que os flex-items serão inseridos.
+- Eixo transversal
+- cross star | cross end
+- cross size
+
+#Propriedades para o elemento pai:
+display: flex;
+flex-direction: row | column;
+flex-wrap: nowrap | wrap;
+flex-flow: row nowrap | row wrap;
+justify-content: flex-start | flex-end;
+align-items: flex-start | flex-end | center | stretch | baseline
+align-content: flex-start | flex-end
+
+- OBS.: não fiz questão de colocar todas os atributos do flexbox para o elemento pai, porque é bastante coisa (https://www.alura.com.br/artigos/css-guia-do-flexbox?_gl=1*1pbefhy*_ga*ODMzNzExNzg2LjE2ODQ0Mjc2ODQ.*_ga_1EPWSW3PCS*MTY5NzI4ODQyNC4yMDIuMS4xNjk3MjkyMjcyLjAuMC4w*_fplc*ZW8xUm9VajBlc0FEeXJJMFBGaWYlMkJ6Z2lObmdkZUhmZ2J4V1ZkRnVJUk5lUm5tVUdhNDJiNjA0TndQUlpNUHlmblRwTEU3RHo4UWU4WWFGZTM3bm9MWkdJYXhkWlpNWUtQdlV0SjFZVm8wd1JKOSUyRjlxV0JnSG1kcnB6ank0ZyUzRCUzRA..).
+
+#Propriedades para os elementos filhos
+OBS.: As propriedades de flexbox que serão inseridas aqui tem a necessidade de estarem dentro de um elemento flex-pai.
+-- order: <número>; /* o valor padrão é 0 */
+flex-grow: <número>; /permite que um item flex-filho cresça de acordo com o espaço disponível no container
+flex-shrink: <número>; /permite um item encolher
+flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+OBS.: É recomendado que você utilize esta propriedade shorthand ao invés de definir cada uma das propriedades em separado. O shorthand define os outros valores de forma inteligente.
+aglign-self: auto | flex-start | flex-end | center | baseline | stretch; /Permite que o padrão seja 'quebrado' individualmente para um item.
+
+As propriedades float, clear e vertical-align não têm efeito em flex-items.

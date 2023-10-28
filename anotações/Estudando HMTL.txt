@@ -1,0 +1,45 @@
+Estudando HMTL:
+
+- As tags são organizadas em dois conjuntos de tags: inline e block level.
+
+-- Inline: elementos usados para textos.
+-- Block level: um elemento desse tipo ocupa todo o espaço da tag 'pai'.
+
+#Tags semânticas - facilitam o entendimento do motor compilador do navegador entender o código (SEO):
+<header><main><footer><section><article><aside><nav><ol><ul><li>
+
+#Tags sem semântica: <div><span><b>
+
+#Estrutura básica de uma página web, com boa semântica:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste-hmtl</title>
+</head>
+<body>
+<header>
+</header>
+<hr>
+<main>
+<section>
+</section>
+</main>
+<hr>
+<footer>
+</footer>
+</body>
+
+#Criando um formulário:
+<forms></forms>
+A tag acima recebe dois atributos importantes para o seu devido funcionamento: method, action. Ambos os atributos dizem a respeito do que a tag faz em conjunto com o script/javascript que escrevemos. O method recebe como valor o método HTTP que o formulário vai executar (get, post). E o action especifica para onde enviar os dados do formulário quando o formulário for enviado.
+<input type="text">
+Permite que o usuário escreva algo no formulário. O principal atributo da tag é 'type', pois mostra o tipo de input permitido.
+<textarea></textarea>
+Permite que o usuário escreva um texto para envio.
+
+<button type="submit"></button>
+
+<label></label>
+É como você mostra o que quer do usuário no formulário, basicamente é o campo de texto onde se 'pede' as informações para o usuário, e também onde se mostra algumas instruções do que se deve preencher no campo.

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
+
+:root{
+    --cor-primaria: #10002b;
+    --cor-segundaria: #272727;
+    --cor-terceiraria: blue;
+
+    --font-principal: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --font-cabecalho: 'Montserrat', sans-serrif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-family: var(--font-principal);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link{
+    color: white;
+    font-family: var(--font-cabecalho);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.apresentacao{
+    padding: 2% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.apresentacao__texto{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__texto_titulo{
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+
+}
+
+.titulo_destaque{
+    color: blue;/*7b2cbf */
+}
+
+.apresentacao__conteudo{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__conteudo_titulo{
+    color: #e0aaff;
+    font-weight: bold;
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__links_botoes{
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid #22D4FD;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+
+.apresentacao__links_botoes:hover{
+    background-color: var(--cor-segundaria);
+}
+
+.tamanho_imagem{
+    display: flex;
+}
+
+.imagem{
+    border-radius: 10%;
+    margin-left: 10%;
+    border-style: solid;
+}
+
+.rodape{
+    color: black;
+    background-color: var(--cor-terceiraria);
+    padding: 1%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 400px;
+}
