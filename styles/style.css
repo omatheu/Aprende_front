@@ -45,6 +45,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 
@@ -122,4 +123,27 @@ body{
 
 apresentacao__imagem{
     width: 50%;
+}
+
+@media (max-width: 902px){
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .cabecalho{
+        justify-content: center;
+    }
+
+    .cabecalho__menu{
+        padding: 10%;
+    }
+
+    body{
+        background-color: #27005D;
+    }
+    
+    .apresentacao__conteudo{
+        width: auto;
+    }
 }
